@@ -37,8 +37,8 @@
                 "description": "[Ακολουθήστε αυτές τις οδηγίες για να βρείτε το device id και το local key.](https://github.com/make-all/tuya-local#finding-your-device-id-and-local-key)",
                 "data": {
                     "host": "Διεύθυνση IP ή όνομα",
-                    "device_id": "Device ID (ή device_id της gateway για συσκευές συνδεδεμένες μέσω gateway)",
-                    "local_key": "Local key",
+                    "device_id": "Device ID (ή device_id του gateway για συσκευές συνδεδεμένες μέσω gateway)",
+                    "local_key": "Τοπικό Κλειδί",
                     "protocol_version": "Έκδοση Πρωτοκόλλου (δοκιμάστε αυτόματο (auto) αν δεν το γνωρίζετε)",
                     "poll_only": "Ανίχνευση μόνο (δοκιμάστε αυτό αν η συσκευή δε λειτουργεί πλήρως)",
                     "device_cid": "Sub device node_id ή uuid (για συσκευές συνδεμένες μέσω gateway)"
@@ -85,7 +85,7 @@
                 "description": "[Ακολουθήστε αυτές τις οδηγίες για να βρείτε το local key.](https://github.com/make-all/tuya-local#finding-your-device-id-and-local-key)",
                 "data": {
                     "host": "Διεύθυνση IP ή όνομα",
-                    "local_key": "Local key",
+                    "local_key": "Τοπικό κλειδί",
                     "protocol_version": "Έκδοση Πρωτοκόλλου (δοκιμάστε αυτόματο (auto) αν δεν το γνωρίζετε)",
                     "poll_only": "Ανίχνευση μόνο (δοκιμάστε αυτό αν η συσκευή δε λειτουργεί πλήρως)"
                 }
@@ -398,10 +398,10 @@
             "currency": {
                 "name": "Νόμισμα",
                 "state": {
-                    "usd": "Δολάριο ΗΠΑ",
+                    "usd": "Δολλάριο ΗΠΑ",
                     "eur": "Ευρώ",
                     "cny": "Γουάν",
-                    "cad": "Δολάριο Καναδά",
+                    "cad": "Δολλάριο Καναδά",
                     "gbp": "Λίρα Στερλίνα"
                 }
             },
@@ -449,7 +449,7 @@
                     "chicken": "Κοτόπουλο",
                     "shrimp": "Γαρίδες",
                     "fish": "Ψάρι",
-                    "chicken_drumsticks": "Μπατονέτες κοτόπουλου",
+                    "chicken_drumsticks": "Μπουτάκια κοτόπουλου",
                     "vegetables": "Λαχανικά",
                     "desserts": "Γλυκά",
                     "none": "Καμία",
@@ -459,7 +459,7 @@
                     "bacon": "Μπέικον",
                     "cake": "Κέικ",
                     "bread": "Ψωμί",
-                    "toast": "Ψωμί",
+                    "toast": "Ψωμί τοστ",
                     "sausage": "Λουκάνικο",
                     "dry_fruit": "Ξηροί καρποί",
                     "custom": "Προσαρμοσμένο",
@@ -546,15 +546,15 @@
                 "name": "Ενσωματωμένη συνταγή",
                 "state": {
                     "none": "Καμία",
-                    "steamed_egg_with_okra": "Αυγό με οκρα",
-                    "steamed_sea_bass": "Ατλαντικός λαβράκι",
+                    "steamed_egg_with_okra": "Αυγό με μπάμιες",
+                    "steamed_sea_bass": "Λαβράκι",
                     "steamed_prawns": "Γαρίδες",
                     "handmade_steamed_bread": "Χειροποίητο ψωμί",
-                    "fan_steamed_baby_vegetables": "Ατμός με λαχανικά",
+                    "fan_steamed_baby_vegetables": "Λαχανικά",
                     "braised_pork": "Χοιρινό",
                     "snow_fungus_and_bird_s_nest": "Μανιτάρια και φωλιά πουλιών",
-                    "crab_pot": "Κατσαρίδα",
-                    "potato_ribs": "Πατάτες με ριπς",
+                    "crab_pot": "Καβούρι",
+                    "potato_ribs": "Πατάτες",
                     "coconut_chicken_soup": "Σούπα κοτόπουλο με καρύδα",
                     "snack_platter": "Πιάτο με σνακ",
                     "chicken_skewers": "Κοτόπουλο σε σουβλάκι",
@@ -562,20 +562,20 @@
                     "dried_lemon": "Ξερό λεμόνι",
                     "pork_jerky": "Χοιρινό τζέρκι",
                     "crispy_hairtail": "Τραγανό ψαρονέφρι",
-                    "spicy_grilled_fish": "Καυτερό ψάρι στη σχάρα",
+                    "spicy_grilled_fish": "Πικάντικο ψάρι στη σχάρα",
                     "roasted_sweet_potatoes": "Ψητές γλυκοπατάτες",
                     "roasted_chicken_wings": "Ψητές φτερούγες κοτόπουλου",
-                    "cumin_lamb_chops": "Μπριζόλες αρνιού με κύμινο",
+                    "cumin_lamb_chops": "Παϊδάκια αρνιού με κύμινο",
                     "honey_grilled_chicken": "Κοτόπουλο στη σχάρα με μέλι",
                     "garlic_eggplant": "Μελιτζάνες με σκόρδο",
                     "portuguese_egg_tart": "Πορτογαλική τάρτα με αυγά",
-                    "creme_brulee": "Κρέμα μπριγιέ",
-                    "cocoa_chips": "Τσίπς κακάο",
+                    "creme_brulee": "Κρέμ μπρουλέ",
+                    "cocoa_chips": "Τσίπς σοκολάτας",
                     "butter_cookies": "Μπισκότα βουτύρου",
                     "chiffon_cake": "Κέικ σιφόν",
                     "puff_pastry": "Φύλλο κρούστας",
                     "red_bean_bread": "Ψωμί με κόκκινα φασόλια",
-                    "milk_toast": "Ψωμί με γάλα"
+                    "milk_toast": "Ψωμί τοστ με γάλα"
                 }
             }
         },
@@ -587,7 +587,7 @@
                     "good": "Καλή",
                     "moderate": "Μέτρια",
                     "poor": "Κακή",
-                    "severe": "Σοβαρή"
+                    "severe": "Κάκιστη"
                 }
             },
             "status": {
